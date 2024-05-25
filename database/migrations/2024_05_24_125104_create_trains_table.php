@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('company', 50);
             $table->string('departure', 60);
             $table->string('arrival', 60);
-            $table->dateTime('departure_time');
-            $table->dateTime('arrival_time');
+            $table->time('departure_time');
+            $table->time('arrival_time');
             $table->string('code_transport');
             $table->integer('carriage');
             $table->integer('margin_time');

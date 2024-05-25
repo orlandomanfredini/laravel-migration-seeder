@@ -19,6 +19,7 @@
 
     <main class="bg-light">
         <div class="container">
+            <a href="{{route('trains')}}">Treni</a>
             <div class="row">
                 <div class="col-12">
                     <div class="min-vh-100 py-5 d-flex flex-column justify-content-center">
