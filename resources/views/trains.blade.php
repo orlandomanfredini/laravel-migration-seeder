@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    @vite('resources/js/app.js')
-</head>
-<body>
-<main>
-    <section>
-        <div class="container">
+@extends('layout')
+
+@section('content')
+    <div class="container">
             <ul class="row mt-5">
                 @foreach ($trains as $train )
                 <div class="col-3 mt-5">
@@ -24,7 +16,4 @@
                 @endforeach
             </ul>
         </div>
-    </section>
-</main>
-</body>
-</html>
+    @endsection
