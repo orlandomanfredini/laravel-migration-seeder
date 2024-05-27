@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\DB;
 
 class TrainSeeder extends Seeder
 {
+
+    
     /**
      * Run the database seeds.
      */
@@ -24,7 +26,7 @@ class TrainSeeder extends Seeder
             $new_train->departure = $faker->city();
             $new_train->arrival = $faker->city();
             $new_train->departure_time = $faker->time();
-            $new_train->arrival_time= $faker->time();
+            $new_train->arrival_time= $faker->dateTimeBetween($new_train->departure_time, '+1 hours');
             $new_train->code_transport= $faker->unique()->bothify('??-#####');
             $new_train->carriage= $faker->randomNumber(2);
             $new_train->margin_time= $faker->randomNumber(2);
